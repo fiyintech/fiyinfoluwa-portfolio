@@ -1,140 +1,373 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="wvF1gbXSoQHkS3-cIJeALDVboXyE2gyUgvs4k3tSlcc" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fiyinfoluwa Akinyemi — AI Developer & Computer Science Student</title>
+<meta name="description" content="Portfolio of Fiyinfoluwa Akinyemi — AI Developer, Computer Science student and future cybersecurity specialist. Building intelligent systems, automation tools and software that solve real-world problems." />
+<meta name="author" content="Fiyinfoluwa Akinyemi" />
+<meta name="keywords" content="Fiyinfoluwa Akinyemi, AI Developer, Machine Learning, Cybersecurity, Python, Computer Science, Portfolio" />
+<meta name="theme-color" content="#08111f" />
+<link rel="canonical" href="https://fiyintech.github.io/" />
+<link rel="icon" href="favicon.png" type="image/png" />
 
-    <title>Fiyinfoluwa Akinyemi | AI Developer & Computer Science Student</title>
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Fiyinfoluwa Akinyemi" />
+<meta property="og:title" content="Fiyinfoluwa Akinyemi — AI Developer" />
+<meta property="og:description" content="Building intelligent systems, automation tools, and software that solve real-world problems." />
+<meta property="og:url" content="https://fiyintech.github.io/" />
+<meta property="og:image" content="https://fiyintech.github.io/favicon.png" />
 
-    <meta name="description" content="Portfolio of Fiyinfoluwa Akinyemi — AI Developer, Computer Science Student, and future Cybersecurity Specialist.">
-    <meta name="keywords" content="Fiyinfoluwa, Fiyintech, AI, Artificial Intelligence, Computer Science, Cybersecurity, MAI AI">
-    <meta name="author" content="Fiyinfoluwa Akinyemi">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Fiyinfoluwa Akinyemi — AI Developer" />
+<meta name="twitter:description" content="Building intelligent systems, automation tools, and software that solve real-world problems." />
+<meta name="twitter:image" content="https://fiyintech.github.io/favicon.png" />
 
-    <link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Fiyinfoluwa Akinyemi",
+  "jobTitle": "AI Developer",
+  "description": "AI Developer, Computer Science student and future cybersecurity specialist.",
+  "url": "https://fiyintech.github.io/",
+  "sameAs": ["https://github.com/fiyintech"]
+}
+</script>
 </head>
-
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<div class="background"></div>
+<div class="bg-layer" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="grid-lines"></div>
+  <canvas id="particles"></canvas>
+  <div class="spotlight" id="spotlight"></div>
+</div>
 
-<nav class="navbar">
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-    <div class="logo">
-        Fiyinfoluwa
-    </div>
-
-    <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-
-</nav>
-
-
-<header class="hero">
-
-    <div class="hero-content">
-
-        <p class="intro">
-            BUILDING THE FUTURE
-        </p>
-
-        <h1>
-            Fiyinfoluwa
-        </h1>
-
-        <h2>
-            AI Developer<br>
-            Computer Science Student<br>
-            Future Cybersecurity Specialist
-        </h2>
-
-        <p class="description">
-
-            Building intelligent systems, automation tools,
-            and software that solve real-world problems.
-
-        </p>
-
-        <div class="buttons">
-
-            <a href="#projects" class="primary-btn">
-                Explore Projects
-            </a>
-
-            <a href="https://github.com/fiyintech"
-               target="_blank"
-               class="secondary-btn">
-
-                GitHub
-
-            </a>
-
-        </div>
-
-    </div>
-
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#hero" aria-label="Home">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span class="brand-text">Fiyin<span class="grad">tech</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-sm btn-primary nav-cta" href="https://github.com/fiyintech" target="_blank" rel="noopener">GitHub</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
+<main id="main">
 
-<section id="projects">
-
-    <h2>Featured Projects</h2>
-
-    <div class="placeholder-card">
-        🚧 Coming in Milestone 2
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <p class="pill reveal"><span class="live-dot"></span> Available for internships & collaborations</p>
+      <h1 class="hero-title reveal">Fiyinfoluwa <span class="grad">Akinyemi</span></h1>
+      <p class="hero-sub reveal">
+        <span>AI Developer</span><i aria-hidden="true">/</i>
+        <span>Computer Science Student</span><i aria-hidden="true">/</i>
+        <span>Future Cybersecurity Specialist</span>
+      </p>
+      <p class="hero-desc reveal">
+        Building intelligent systems, automation tools, and software that solve
+        real&#8209;world problems.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#projects">Explore Projects</a>
+        <a class="btn btn-ghost" href="https://github.com/fiyintech" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <ul class="hero-stats reveal">
+        <li><strong data-count="2">0</strong><span>Flagship Projects</span></li>
+        <li><strong data-count="6">0</strong><span>Core Skills</span></li>
+        <li><strong data-count="2026">0</strong><span>Journey Started</span></li>
+      </ul>
     </div>
+    <div class="scroll-hint" aria-hidden="true"><span></span></div>
+  </section>
 
-</section>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">01 — About</p>
+        <h2>Engineering intelligence with intent</h2>
+      </header>
 
+      <div class="about-grid">
+        <article class="card glass reveal">
+          <h3>Biography</h3>
+          <p>
+            I'm Fiyinfoluwa Akinyemi, an AI developer and Computer Science student
+            who builds practical software at the intersection of machine
+            intelligence and security. My work spans conversational AI assistants,
+            automation tooling and web platforms that replace manual, error-prone
+            processes with reliable systems.
+          </p>
+          <p>
+            I write mostly Python, work daily on Linux, version everything with Git,
+            and care deeply about clean architecture, readable code and secure
+            defaults. I learn by shipping — every project I take on is designed to
+            solve a real problem for real people.
+          </p>
+        </article>
 
-<section id="about">
-
-    <h2>About</h2>
-
-    <div class="placeholder-card">
-        🚧 Coming in Milestone 2
+        <div class="about-side">
+          <article class="card glass reveal">
+            <span class="ico" aria-hidden="true">◈</span>
+            <h3>Vision</h3>
+            <p>A world where intelligent systems are accessible, trustworthy and secure by design — not by accident.</p>
+          </article>
+          <article class="card glass reveal">
+            <span class="ico" aria-hidden="true">◆</span>
+            <h3>Mission</h3>
+            <p>To design and ship AI-powered tools that measurably reduce human effort while protecting the data they run on.</p>
+          </article>
+          <article class="card glass reveal">
+            <span class="ico" aria-hidden="true">◇</span>
+            <h3>Goals</h3>
+            <ul class="tick">
+              <li>Earn a BSc in Computer Science with distinction</li>
+              <li>Ship MAI AI as a production-grade assistant</li>
+              <li>Complete a Master's in Cybersecurity</li>
+              <li>Work as an AI Engineer on security-critical systems</li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </div>
+  </section>
 
-</section>
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">02 — Featured Projects</p>
+        <h2>Work that solves real problems</h2>
+      </header>
 
+      <div class="projects">
+        <article class="card glass project reveal">
+          <div class="project-top">
+            <h3>MAI AI</h3>
+            <span class="status live">In Development</span>
+          </div>
+          <p>
+            A personal AI assistant built to reason, respond and automate. MAI AI
+            handles natural-language conversation, task automation and contextual
+            memory, with a modular backend so new capabilities can be plugged in
+            without rewriting the core.
+          </p>
+          <ul class="badges">
+            <li>Python</li><li>NLP</li><li>APIs</li><li>Automation</li><li>Linux</li>
+          </ul>
+          <div class="progress" role="progressbar" aria-label="MAI AI completion" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-head"><span>Progress</span><span>70%</span></div>
+            <div class="bar"><i data-progress="70"></i></div>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-sm btn-primary" href="https://github.com/fiyintech" target="_blank" rel="noopener">View Code</a>
+            <a class="btn btn-sm btn-ghost" href="#contact">Request Demo</a>
+          </div>
+        </article>
 
-<section id="skills">
-
-    <h2>Skills</h2>
-
-    <div class="placeholder-card">
-        🚧 Coming in Milestone 3
+        <article class="card glass project reveal">
+          <div class="project-top">
+            <h3>Sign Out Platform</h3>
+            <span class="status">Active Build</span>
+          </div>
+          <p>
+            A digital sign-in / sign-out platform that replaces paper registers with
+            secure, timestamped records. Includes role-based access, real-time
+            attendance dashboards and exportable logs for administrators.
+          </p>
+          <ul class="badges">
+            <li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Databases</li><li>Auth</li>
+          </ul>
+          <div class="progress" role="progressbar" aria-label="Sign Out Platform completion" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-head"><span>Progress</span><span>55%</span></div>
+            <div class="bar"><i data-progress="55"></i></div>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-sm btn-primary" href="https://github.com/fiyintech" target="_blank" rel="noopener">View Code</a>
+            <a class="btn btn-sm btn-ghost" href="#contact">Request Demo</a>
+          </div>
+        </article>
+      </div>
     </div>
+  </section>
 
-</section>
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">03 — Skills</p>
+        <h2>The toolkit behind the build</h2>
+      </header>
 
-
-<section id="contact">
-
-    <h2>Contact</h2>
-
-    <div class="placeholder-card">
-
-        📧 fiyinfoluwa.dev@gmail.com
-
+      <div class="skills">
+        <article class="card glass skill reveal">
+          <span class="ico" aria-hidden="true">🐍</span>
+          <h3>Python</h3>
+          <p>Core language for AI models, scripting and backend logic.</p>
+          <div class="bar"><i data-progress="88"></i></div>
+        </article>
+        <article class="card glass skill reveal">
+          <span class="ico" aria-hidden="true">🧠</span>
+          <h3>Artificial Intelligence</h3>
+          <p>NLP, prompt engineering and applied machine learning workflows.</p>
+          <div class="bar"><i data-progress="82"></i></div>
+        </article>
+        <article class="card glass skill reveal">
+          <span class="ico" aria-hidden="true">🛡️</span>
+          <h3>Cybersecurity</h3>
+          <p>Secure coding, threat modelling and system hardening fundamentals.</p>
+          <div class="bar"><i data-progress="70"></i></div>
+        </article>
+        <article class="card glass skill reveal">
+          <span class="ico" aria-hidden="true">🐧</span>
+          <h3>Linux</h3>
+          <p>Daily driver — shell scripting, permissions and server administration.</p>
+          <div class="bar"><i data-progress="80"></i></div>
+        </article>
+        <article class="card glass skill reveal">
+          <span class="ico" aria-hidden="true">🌿</span>
+          <h3>Git & GitHub</h3>
+          <p>Branching strategy, clean commits and collaborative workflows.</p>
+          <div class="bar"><i data-progress="85"></i></div>
+        </article>
+        <article class="card glass skill reveal">
+          <span class="ico" aria-hidden="true">💡</span>
+          <h3>Problem Solving</h3>
+          <p>Breaking complex problems into shippable, testable solutions.</p>
+          <div class="bar"><i data-progress="92"></i></div>
+        </article>
+      </div>
     </div>
+  </section>
 
-</section>
+  <!-- JOURNEY -->
+  <section class="section" id="journey">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">04 — Journey</p>
+        <h2>From first commit to AI engineer</h2>
+      </header>
 
-<script src="script.js"></script>
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="year">2026</span>
+          <div class="card glass">
+            <h3>Portfolio</h3>
+            <p>Designed and shipped this portfolio from scratch in pure HTML, CSS and JavaScript.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="year">Now</span>
+          <div class="card glass">
+            <h3>MAI AI</h3>
+            <p>Building a modular AI assistant for conversation, reasoning and automation.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="year">Next</span>
+          <div class="card glass">
+            <h3>University</h3>
+            <p>Admission into a Computer Science programme to deepen theoretical foundations.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="year">Then</span>
+          <div class="card glass">
+            <h3>BSc Computer Science</h3>
+            <p>Graduating with strong fundamentals in algorithms, systems and software engineering.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="year">Future</span>
+          <div class="card glass">
+            <h3>Cybersecurity Master's</h3>
+            <p>Specialising in securing intelligent systems and critical infrastructure.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="year">Goal</span>
+          <div class="card glass">
+            <h3>AI Engineer</h3>
+            <p>Engineering production AI systems that are safe, scalable and genuinely useful.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
 
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">05 — Contact</p>
+        <h2>Let's build something worth shipping</h2>
+      </header>
+
+      <div class="contact-grid">
+        <a class="card glass contact-card reveal" href="https://github.com/fiyintech" target="_blank" rel="noopener">
+          <span class="ico" aria-hidden="true">⌘</span>
+          <h3>GitHub</h3>
+          <p>github.com/fiyintech</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="card glass contact-card reveal" href="mailto:fiyinfoluwa@fiyintech.dev">
+          <span class="ico" aria-hidden="true">✉</span>
+          <h3>Email</h3>
+          <p>fiyinfoluwa@fiyintech.dev</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <div class="card glass contact-card disabled reveal" aria-disabled="true">
+          <span class="ico" aria-hidden="true">in</span>
+          <h3>LinkedIn</h3>
+          <p>Profile launching soon</p>
+          <span class="tag">Coming soon</span>
+        </div>
+        <div class="card glass contact-card disabled reveal" aria-disabled="true">
+          <span class="ico" aria-hidden="true">▤</span>
+          <h3>Résumé</h3>
+          <p>PDF available on request</p>
+          <span class="tag">Coming soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-brand">Fiyin<span class="grad">tech</span></p>
+    <p class="footer-note">Designed & built by Fiyinfoluwa Akinyemi — HTML, CSS & vanilla JavaScript.</p>
+    <p class="footer-copy">© <span id="year">2026</span> Fiyinfoluwa Akinyemi. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="script.js" defer></script>
 </body>
 </html>
-```
