@@ -326,7 +326,7 @@ img,canvas{display:block;max-width:100%}
 
 /* Reveal */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
-.reveal.visible{opacity:1;transform:none}
+.reveal.shown{opacity:1;transform:none}
 
 /* ============ Responsive ============ */
 @media (max-width:960px){
