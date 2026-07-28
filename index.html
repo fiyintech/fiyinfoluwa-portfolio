@@ -33,12 +33,53 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Fiyinfoluwa Akinyemi",
-  "jobTitle": "AI Developer",
-  "description": "AI Developer, Computer Science student and future cybersecurity specialist.",
-  "url": "https://fiyintech.github.io/",
-  "sameAs": ["https://github.com/fiyintech"]
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://fiyinfoluwa-portfolio.netlify.app/#person",
+      "name": "Fiyinfoluwa Akinyemi",
+      "jobTitle": "AI Developer",
+      "description": "AI Developer and Computer Science student building intelligent systems, automation tools, and software solutions.",
+      "url": "https://fiyinfoluwa-portfolio.netlify.app/",
+      "sameAs": ["https://github.com/fiyintech"],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Cybersecurity",
+        "Python",
+        "Software Development",
+        "Linux"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "MAI AI",
+      "description": "A modular AI assistant designed to combine conversational intelligence, automation, Linux tools, cybersecurity utilities, and personal productivity features.",
+      "applicationCategory": "AIApplication",
+      "author": { "@id": "https://fiyinfoluwa-portfolio.netlify.app/#person" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Sign Out Platform",
+      "description": "A digital platform allowing graduating students to create and share personalized graduation boards, memories, and sign-out experiences.",
+      "applicationCategory": "WebApplication",
+      "author": { "@id": "https://fiyinfoluwa-portfolio.netlify.app/#person" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "BLIC CBT Examination System",
+      "description": "A school computer-based testing platform with student accounts, teacher management, question uploads, and result tracking.",
+      "applicationCategory": "EducationalApplication",
+      "author": { "@id": "https://fiyinfoluwa-portfolio.netlify.app/#person" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ORA Social Platform",
+      "description": "A next-generation social media concept focused on community, entertainment discovery, and a gamified reputation system using Aura points.",
+      "applicationCategory": "SocialNetworkingApplication",
+      "author": { "@id": "https://fiyinfoluwa-portfolio.netlify.app/#person" }
+    }
+  ]
 }
 </script>
 </head>
