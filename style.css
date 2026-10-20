@@ -236,6 +236,29 @@ img,canvas{display:block;max-width:100%}
 .tick li{position:relative;padding-left:24px;color:var(--muted);font-size:.94rem}
 .tick li::before{content:"▸";position:absolute;left:0;color:var(--accent)}
 
+/* Founder (ORACOOL) */
+.founder{
+  margin-top:22px;position:relative;
+  border-color:var(--stroke-strong);
+  background:
+    linear-gradient(120deg,rgba(37,99,235,.14),rgba(124,58,237,.14));
+}
+.founder::after{
+  content:"";position:absolute;inset:0;pointer-events:none;border-radius:var(--radius);
+  background:radial-gradient(600px circle at 12% 0%,rgba(56,189,248,.12),transparent 60%);
+}
+.founder .ico{
+  background:linear-gradient(135deg,rgba(56,189,248,.30),rgba(124,58,237,.30));
+  border-color:rgba(56,189,248,.35);
+}
+.founder h3{
+  background:linear-gradient(100deg,var(--accent),var(--primary) 55%,var(--purple));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.founder > *{position:relative;z-index:1}
+.founder p{max-width:760px}
+.founder-link{margin-top:18px}
+
 /* Projects */
 .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
 .project{display:flex;flex-direction:column;gap:16px;transition:transform .35s var(--ease),border-color .35s}
